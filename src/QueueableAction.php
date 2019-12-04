@@ -14,7 +14,7 @@ trait QueueableAction
             protected $action;
             protected $queue;
 
-            public function __construct(object $action, ?string $queue)
+            public function __construct($action, ?string $queue)
             {
                 $this->action = $action;
                 $this->onQueue($queue);
